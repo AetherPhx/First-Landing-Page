@@ -5,5 +5,36 @@
 @use "../util/mixins" as mixins;
 
 .benefits {
-	@include mixins.section-wrapper(border.$radius-medium);
+	&__title {
+		margin-bottom: space.$md;
+	}
+
+	&__deck {
+		display: grid;
+		gap: space.$md;
+	}
+
+	&__card {
+		padding: space.$sm space.$md;
+		@include mixins.section-wrapper(border.$radius-medium);
+
+		display: grid;
+		justify-items: center;
+		gap: space.$xxs;
+
+		&-icon {
+			max-height: 300px;
+			border-radius: border.$radius-large;
+			margin-bottom: space.$sm;
+		}
+
+		&-title {
+			font-weight: typo.$fw-bold;
+		}
+
+		&-text {
+			margin: 0;
+			text-align: center;
+		}
+	}
 }

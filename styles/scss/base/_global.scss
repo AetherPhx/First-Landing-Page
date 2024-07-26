@@ -22,7 +22,7 @@ h3 {
 	line-height: 1.2;
 	text-wrap: balance;
 	text-align: center;
-	color: color.$background-main;
+	color: color.$main;
 }
 
 h1 {
@@ -36,6 +36,7 @@ h2 {
 h3 {
 	font-size: typo.$fs-big;
 	text-align: left;
+	color: color.$background-main;
 }
 
 p {

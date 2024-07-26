@@ -5,5 +5,34 @@
 @use "../util/mixins" as mixins;
 
 .testimonies {
-	@include mixins.section-wrapper(border.$radius-medium);
+	&__title {
+		margin-bottom: space.$md;
+		font-weight: typo.$fw-bold;
+	}
+
+	&__deck {
+		display: grid;
+		gap: space.$md;
+	}
+
+	&__card {
+		@include mixins.section-wrapper(border.$radius-medium);
+		padding: space.$sm space.$xs;
+
+		&-header {
+			padding-bottom: space.$xs;
+			border-bottom: border.$width-light solid color.$background-main;
+
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			align-items: center;
+			gap: space.$xxs;
+		}
+
+		&-photo {
+			max-height: 80px;
+			border-radius: 100%;
+		}
+	}
 }
