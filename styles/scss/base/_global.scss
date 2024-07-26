@@ -2,13 +2,14 @@
 @use "../theme/colors" as color;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
+@use "../util/mixins" as mixins;
 
 body {
 	background-color: color.$background-main;
 
 	font-family: typo.$fm-text;
 	line-height: 1.5;
-	font-size: typo.$fs-small;
+	font-size: typo.$fs-medium;
 	font-weight: typo.$fw-normal;
 }
 
@@ -24,8 +25,6 @@ h3 {
 }
 
 h1 {
-	margin: space.$sm 0;
-
 	font-size: typo.$fs-huge;
 	font-weight: typo.$fw-bold;
 }
@@ -33,8 +32,8 @@ h2 {
 	font-size: typo.$fs-bigger;
 }
 h3 {
-	text-align: left;
 	font-size: typo.$fs-big;
+	text-align: left;
 }
 
 p {
@@ -44,6 +43,41 @@ p {
 	// color: color.$background-main; //TODO: Aplicar cuando se tenga los estilos de fondo
 }
 
+button {
+	@include mixins.element-wrapper;
+	padding: space.$xxs space.$sm;
+	border-radius: border.$radius-large;
+
+	font-family: typo.$fm-text;
+	font-size: typo.$fs-big;
+	font-weight: typo.$fw-medium;
+	color: color.$main;
+
+	&:active {
+		background-color: color.$secondary;
+		border-color: color.$background-main;
+		color: color.$background-main;
+	}
+}
+
 img {
 	max-width: 100%;
+}
+
+input,
+textarea {
+	@include mixins.element-wrapper;
+	padding: space.$xxs space.$xs;
+	margin: space.$xxs 0;
+	border-radius: border.$radius-medium;
+
+	color: color.$main;
+
+	&::placeholder {
+		color: inherit;
+	}
+
+	&:focus {
+		outline: none;
+	}
 }

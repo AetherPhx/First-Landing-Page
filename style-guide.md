@@ -12,8 +12,8 @@
 - 32px | Titulo Principal
 - 24px | Titulos de Secciones
 - 20px | Titulos de Artículos
-- 16px | textos de botones
-- 14px | Texto General
+- 18px | textos de botones
+- 16px | Texto General
 - 12px | Subtítulos pequeños y Texto Menos Importante
 
 ### Desktop
@@ -21,8 +21,8 @@
 - 48px | Titulo Principal
 - 32px | Titulos de Secciones
 - 24px | Titulos de Artículos
-- 18px | textos de botones
-- 16px | Texto General
+- 20px | textos de botones
+- 18px | Texto General
 - 14px | Subtítulos pequeños y Texto Menos Importante
 
 ## Peso de Fuente
