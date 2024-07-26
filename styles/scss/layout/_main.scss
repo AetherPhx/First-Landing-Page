@@ -1,0 +1,7 @@
+@use "../theme/spacing" as space;
+
+.main {
+	margin: space.$xl 0;
+	display: grid;
+	gap: space.$xl;
+}
