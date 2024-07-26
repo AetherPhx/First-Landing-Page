@@ -1,0 +1,15 @@
+@use "../theme/typography" as typo;
+@use "../theme/colors" as color;
+@use "../theme/spacing" as space;
+@use "../theme/borders" as border;
+
+@mixin section-wrapper($border-radius) {
+	background-color: color.$main;
+	border: border.$width-medium solid color.$secondary;
+	border-radius: $border-radius;
+}
+
+@mixin element-wrapper {
+	background-color: color.$background-secondary;
+	border: border.$width-medium solid color.$secondary;
+}
