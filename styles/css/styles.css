@@ -119,9 +119,33 @@ textarea:focus {
   color: #0d47a1;
 }
 
+.main {
+  margin: 32px 0;
+  display: grid;
+  gap: 32px;
+}
+
 .footer {
   text-align: center;
 }
 .footer__text {
   color: #0d47a1;
+}
+
+.hero__img {
+  border-radius: 12px;
+}
+.hero__info {
+  background-color: #0d47a1;
+  border: 3px solid #1e88e5;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 16px;
+  color: #e3f2fd;
+}
+.hero__title {
+  color: inherit;
 }/*# sourceMappingURL=styles.css.map */

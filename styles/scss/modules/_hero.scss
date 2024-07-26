@@ -1,0 +1,27 @@
+@use "../theme/typography" as typo;
+@use "../theme/colors" as color;
+@use "../theme/spacing" as space;
+@use "../theme/borders" as border;
+@use "../util/mixins" as mixins;
+
+.hero {
+	&__img {
+		border-radius: border.$radius-large;
+	}
+
+	&__info {
+		@include mixins.section-wrapper(border.$radius-medium);
+		padding: space.$md;
+
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		gap: space.$sm;
+
+		color: color.$background-main;
+	}
+
+	&__title {
+		color: inherit;
+	}
+}
