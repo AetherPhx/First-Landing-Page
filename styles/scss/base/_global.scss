@@ -1,0 +1,49 @@
+@use "../theme/typography" as typo;
+@use "../theme/colors" as color;
+@use "../theme/spacing" as space;
+@use "../theme/borders" as border;
+
+body {
+	background-color: color.$background-main;
+
+	font-family: typo.$fm-text;
+	line-height: 1.5;
+	font-size: typo.$fs-small;
+	font-weight: typo.$fw-normal;
+}
+
+h1,
+h2,
+h3 {
+	font-family: typo.$fm-title;
+	font-weight: typo.$fw-medium;
+	line-height: 1.2;
+	text-wrap: balance;
+	text-align: center;
+	color: color.$main;
+}
+
+h1 {
+	margin: space.$sm 0;
+
+	font-size: typo.$fs-huge;
+	font-weight: typo.$fw-bold;
+}
+h2 {
+	font-size: typo.$fs-bigger;
+}
+h3 {
+	text-align: left;
+	font-size: typo.$fs-big;
+}
+
+p {
+	margin: space.$xxs 0;
+
+	text-wrap: pretty;
+	// color: color.$background-main; //TODO: Aplicar cuando se tenga los estilos de fondo
+}
+
+img {
+	max-width: 100%;
+}
