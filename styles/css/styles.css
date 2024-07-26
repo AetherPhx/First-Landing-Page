@@ -32,6 +32,7 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-weight: 400;
+  color: #e3f2fd;
 }
 
 h1,
@@ -42,12 +43,13 @@ h3 {
   line-height: 1.2;
   text-wrap: balance;
   text-align: center;
-  color: #0d47a1;
+  color: #e3f2fd;
 }
 
 h1 {
   font-size: 32px;
   font-weight: 700;
+  color: #0d47a1;
 }
 
 h2 {
@@ -62,6 +64,7 @@ h3 {
 p {
   margin: 8px 0;
   text-wrap: pretty;
+  color: #e3f2fd;
 }
 
 button {
@@ -148,4 +151,28 @@ textarea:focus {
 }
 .hero__title {
   color: inherit;
+}
+
+.benefits {
+  background-color: #0d47a1;
+  border: 3px solid #1e88e5;
+  border-radius: 8px;
+}
+
+.testimonies {
+  background-color: #0d47a1;
+  border: 3px solid #1e88e5;
+  border-radius: 8px;
+}
+
+.join {
+  background-color: #0d47a1;
+  border: 3px solid #1e88e5;
+  border-radius: 8px;
+}
+
+.network {
+  background-color: #0d47a1;
+  border: 3px solid #1e88e5;
+  border-radius: 8px;
 }/*# sourceMappingURL=styles.css.map */

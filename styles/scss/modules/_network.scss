@@ -1,0 +1,9 @@
+@use "../theme/typography" as typo;
+@use "../theme/colors" as color;
+@use "../theme/spacing" as space;
+@use "../theme/borders" as border;
+@use "../util/mixins" as mixins;
+
+.network {
+	@include mixins.section-wrapper(border.$radius-medium);
+}

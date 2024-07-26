@@ -11,6 +11,7 @@ body {
 	line-height: 1.5;
 	font-size: typo.$fs-medium;
 	font-weight: typo.$fw-normal;
+	color: color.$background-main;
 }
 
 h1,
@@ -21,12 +22,13 @@ h3 {
 	line-height: 1.2;
 	text-wrap: balance;
 	text-align: center;
-	color: color.$main;
+	color: color.$background-main;
 }
 
 h1 {
 	font-size: typo.$fs-huge;
 	font-weight: typo.$fw-bold;
+	color: color.$main;
 }
 h2 {
 	font-size: typo.$fs-bigger;
@@ -40,7 +42,7 @@ p {
 	margin: space.$xxs 0;
 
 	text-wrap: pretty;
-	// color: color.$background-main; //TODO: Aplicar cuando se tenga los estilos de fondo
+	color: color.$background-main; //TODO: Aplicar cuando se tenga los estilos de fondo
 }
 
 button {
