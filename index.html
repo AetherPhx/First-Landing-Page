@@ -7,14 +7,186 @@
 		<link rel="stylesheet" href="styles/css/styles.css" />
 	</head>
 	<body>
-		<h1>Frontend Challenge Hub</h1>
-		<span> Desafía tus habilidades y domina el frontend </span>
-		<p>
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere eveniet
-			tempore veniam placeat. Rerum earum beatae officiis dolorem, consequatur
-			laborum ullam tempora maiores voluptatem aut est eos sapiente nisi rem!
-		</p>
-		<span> Hecho por Aether Phoenix </span>
-		<button>Ver más</button>
+		<header class="header">
+			<h1 class="header__title">Front end Challenge Hub</h1>
+			<h2 class="header__subtitle">
+				Desafía tus habilidades y domina el frontend
+			</h2>
+		</header>
+
+		<main class="main">
+			<div class="hero">
+				<img src="" alt="" class="hero__img" />
+				<section class="hero__info">
+					<h2 class="hero__title">¡Acepta el Reto!</h2>
+					<p class="hero__text">
+						Cada mes recibirás nuevos desafíos de frontend que te permitirán
+						poner a prueba tus habilidades y mejorar continuamente.
+					</p>
+					<p class="hero__text">
+						Retos diseñados para fortalecer tu lógica, diseño y organización.
+						Tendrás la oportunidad de desarrollar proyectos reales y valiosos
+						mientras te conectas con una comunidad apasionada por el desarrollo
+						web.
+					</p>
+					<p class="hero__text">
+						No solo aprenderás, sino que también crecerás como profesional en un
+						entorno de apoyo y colaboración.
+					</p>
+					<button class="hero__button">Comienza Ahora</button>
+				</section>
+			</div>
+
+			<section class="benefits">
+				<h2 class="benefits__title">¿Por qué suscribirte</h2>
+				<div>
+					<div class="benefits__deck">
+						<article class="benefits__card">
+							<img src="" alt="" class="benefits__card-icon" />
+							<h3 class="benefits__card-title">Desafíos Reales</h3>
+							<p class="benefits__card-text">
+								Trabaja en proyectos prácticos que simulan escenarions del mundo
+								real y mejora tus habilidades técnicas.
+							</p>
+						</article>
+						<article class="benefits__card">
+							<img src="" alt="" class="benefits__card-icon" />
+							<h3 class="benefits__card-title">Mejora Continua</h3>
+							<p class="benefits__card-text">
+								Recibe feedback y revisiones para perfeccionar tu trabajo y
+								aprender nuevas técnicas.
+							</p>
+						</article>
+						<article class="benefits__card">
+							<img src="" alt="" class="benefits__card-icon" />
+							<h3 class="benefits__card-title">Comunidad de Apoyo</h3>
+							<p class="benefits__card-text">
+								Conéctate con otros desarrolladores, comparte conocimientos y
+								crece en un entorno colaborativo.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="testimonies">
+				<h2 class="testimonies__title">Lo que dicen nuestros miembros</h2>
+
+				<div class="testimonies__deck">
+					<article class="testimonies__card">
+						<header class="testimonies__card-header">
+							<h3 class="testimonies__card-name">Ana Rodrígues</h3>
+							<span class="testimonies__card-job">Diseñadora Frontend</span>
+							<img src="" alt="" class="tesmonies__card-photo" />
+						</header>
+
+						<p class="testimonies__card-text">
+							"Frontend Challenge Hub ha transformado mi forma de trabajar. Los
+							desafíos son desafiantes y la comunidad es increíble."
+						</p>
+					</article>
+
+					<article class="testimonies__card">
+						<header class="testimonies__card-header">
+							<h3 class="testimonies__card-name">Luis Martínez</h3>
+							<span class="testimonies__card-job">Dev Frontend Junior</span>
+							<img src="" alt="" class="tesmonies__card-photo" />
+						</header>
+
+						<p class="testimonies__card-text">
+							"He mejorado significativamente mis habilidades de diseño y lógica
+							gracias a los retos mensuales. ¡Altamente recomendado!"
+						</p>
+					</article>
+
+					<article class="testimonies__card">
+						<header class="testimonies__card-header">
+							<h3 class="testimonies__card-name">Carlos Gómez</h3>
+							<span class="testimonies__card-job">Dev Frontend Senior</span>
+							<img src="" alt="" class="tesmonies__card-photo" />
+						</header>
+
+						<p class="testimonies__card-text">
+							"El feedback constante y la interacción con otros desarrolladores
+							me han ayudado a crecer como profesional. ¡Una excelente
+							inversión!"
+						</p>
+					</article>
+
+					<article class="testimonies__card">
+						<header class="testimonies__card-header">
+							<h3 class="testimonies__card-name">Laura Hernández</h3>
+							<span class="testimonies__card-job"
+								>Frontend Developer en UI/UX</span
+							>
+							<img src="" alt="" class="tesmonies__card-photo" />
+						</header>
+
+						<p class="testimonies__card-text">
+							"Los desafíos en Frontend Challenge Hub han sido una excelente
+							oportunidad para mejorar mi diseño de interfaces y mi habilidad
+							para resolver problemas complejos.”
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<form action="" class="join">
+				<h2 class="join__title">Forma parte de esta comunidad</h2>
+				<input
+					name="name"
+					id="name"
+					type="text"
+					class="join__input"
+					placeholder="Nombre"
+				/>
+				<input
+					name="mail"
+					id="mail"
+					type="text"
+					class="join__input"
+					placeholder="Correo"
+				/>
+				<input
+					name="number"
+					id="number"
+					type="text"
+					class="join__input"
+					placeholder="Teléfono"
+				/>
+				<textarea
+					name="goal"
+					id="goal"
+					class="join__input"
+					placeholder="¿Qué te gustaría lograr?"
+				></textarea>
+				<button class="join__button">Unirse</button>
+			</form>
+
+			<section class="network">
+				<h2 class="network__title">Redes</h2>
+				<ul class="network__list">
+					<li class="network__item">
+						<a href="" class="network__link">
+							<img src="" alt="" class="network__img" />
+						</a>
+					</li>
+					<li class="network__item">
+						<a href="" class="network__link">
+							<img src="" alt="" class="network__img" />
+						</a>
+					</li>
+					<li class="network__item">
+						<a href="" class="network__link">
+							<img src="" alt="" class="network__img" />
+						</a>
+					</li>
+				</ul>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<span class="footer__text">Hecho por Aether Phoenix</span>
+		</footer>
 	</body>
 </html>
