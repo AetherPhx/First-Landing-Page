@@ -1,0 +1,7 @@
+@use "../theme/spacing" as space;
+
+.layout {
+	max-width: 1200px;
+	padding: space.$md;
+	margin: 0 auto;
+}

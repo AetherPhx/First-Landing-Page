@@ -103,4 +103,25 @@ textarea::placeholder {
 input:focus,
 textarea:focus {
   outline: none;
+}
+
+.layout {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+.header__subtitle {
+  color: #0d47a1;
+}
+
+.footer {
+  text-align: center;
+}
+.footer__text {
+  color: #0d47a1;
 }/*# sourceMappingURL=styles.css.map */

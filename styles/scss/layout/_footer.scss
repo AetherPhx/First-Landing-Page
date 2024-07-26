@@ -1,0 +1,12 @@
+@use "../theme/typography" as typo;
+@use "../theme/colors" as color;
+@use "../theme/spacing" as space;
+@use "../theme/borders" as border;
+
+.footer {
+	text-align: center;
+
+	&__text {
+		color: color.$main;
+	}
+}

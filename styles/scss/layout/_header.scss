@@ -1,0 +1,13 @@
+@use "../theme/typography" as typo;
+@use "../theme/colors" as color;
+@use "../theme/spacing" as space;
+@use "../theme/borders" as border;
+
+.header {
+	width: 100%;
+	text-align: center;
+
+	&__subtitle {
+		color: color.$main;
+	}
+}
