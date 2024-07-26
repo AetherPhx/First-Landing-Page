@@ -43,7 +43,7 @@ h3 {
   line-height: 1.2;
   text-wrap: balance;
   text-align: center;
-  color: #e3f2fd;
+  color: #0d47a1;
 }
 
 h1 {
@@ -59,6 +59,7 @@ h2 {
 h3 {
   font-size: 20px;
   text-align: left;
+  color: #e3f2fd;
 }
 
 p {
@@ -69,7 +70,7 @@ p {
 
 button {
   background-color: #bbdefb;
-  border: 3px solid #1e88e5;
+  border: 4px solid #1e88e5;
   padding: 8px 16px;
   border-radius: 12px;
   font-family: "Roboto", sans-serif;
@@ -90,7 +91,7 @@ img {
 input,
 textarea {
   background-color: #bbdefb;
-  border: 3px solid #1e88e5;
+  border: 4px solid #1e88e5;
   padding: 8px 12px;
   margin: 8px 0;
   border-radius: 8px;
@@ -140,8 +141,8 @@ textarea:focus {
 }
 .hero__info {
   background-color: #0d47a1;
-  border: 3px solid #1e88e5;
-  border-radius: 8px;
+  border: 4px solid #1e88e5;
+  border-radius: 4px;
   padding: 20px;
   display: flex;
   flex-flow: column nowrap;
@@ -153,26 +154,71 @@ textarea:focus {
   color: inherit;
 }
 
-.benefits {
+.benefits__title {
+  margin-bottom: 20px;
+}
+.benefits__deck {
+  display: grid;
+  gap: 20px;
+}
+.benefits__card {
+  padding: 16px 20px;
   background-color: #0d47a1;
-  border: 3px solid #1e88e5;
+  border: 4px solid #1e88e5;
   border-radius: 8px;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+.benefits__card-icon {
+  max-height: 300px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.benefits__card-title {
+  font-weight: 700;
+}
+.benefits__card-text {
+  margin: 0;
+  text-align: center;
 }
 
-.testimonies {
+.testimonies__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.testimonies__deck {
+  display: grid;
+  gap: 20px;
+}
+.testimonies__card {
   background-color: #0d47a1;
-  border: 3px solid #1e88e5;
+  border: 4px solid #1e88e5;
   border-radius: 8px;
+  padding: 16px 12px;
+}
+.testimonies__card-header {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e3f2fd;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.testimonies__card-photo {
+  max-height: 80px;
+  border-radius: 100%;
 }
 
 .join {
   background-color: #0d47a1;
-  border: 3px solid #1e88e5;
-  border-radius: 8px;
+  border: 4px solid #1e88e5;
+  border-radius: 4px;
 }
 
 .network {
   background-color: #0d47a1;
-  border: 3px solid #1e88e5;
-  border-radius: 8px;
+  border: 4px solid #1e88e5;
+  border-radius: 4px;
 }/*# sourceMappingURL=styles.css.map */
