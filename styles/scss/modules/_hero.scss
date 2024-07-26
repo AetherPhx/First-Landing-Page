@@ -10,7 +10,7 @@
 	}
 
 	&__info {
-		@include mixins.section-wrapper(border.$radius-medium);
+		@include mixins.section-wrapper(border.$radius-small);
 		padding: space.$md;
 
 		display: flex;
