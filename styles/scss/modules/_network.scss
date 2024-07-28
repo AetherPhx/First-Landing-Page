@@ -1,8 +1,9 @@
+@use "../util/functions" as fn;
+@use "../util/mixins" as mixins;
 @use "../theme/typography" as typo;
 @use "../theme/colors" as color;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
-@use "../util/mixins" as mixins;
 
 .network {
 	@include mixins.section-wrapper(border.$radius-large);
@@ -24,6 +25,6 @@
 
 	&__icon {
 		color: color.$background-main;
-		font-size: 30px;
+		font-size: fn.pxToRem(30);
 	}
 }

@@ -1,8 +1,9 @@
+@use "../util/functions" as fn;
+@use "../util/mixins" as mixins;
 @use "../theme/typography" as typo;
 @use "../theme/colors" as color;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
-@use "../util/mixins" as mixins;
 
 .benefits {
 	&__deck {
@@ -19,7 +20,7 @@
 		gap: space.$xxs;
 
 		&-icon {
-			max-height: 300px;
+			max-height: fn.pxToRem(300);
 			border-radius: border.$radius-large;
 			margin-bottom: space.$sm;
 		}

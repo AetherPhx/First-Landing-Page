@@ -1,7 +1,8 @@
+@use "../util/functions" as fn;
 @use "../theme/spacing" as space;
 
 .layout {
-	max-width: 1200px;
+	max-width: fn.pxToRem(1200);
 	padding: space.$md;
 	margin: 0 auto;
 }

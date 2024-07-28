@@ -1,8 +1,9 @@
+@use "../util/mixins" as mixins;
+@use "../util/functions" as fn;
 @use "../theme/typography" as typo;
 @use "../theme/colors" as color;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
-@use "../util/mixins" as mixins;
 
 .testimonies {
 	&__title {
@@ -30,7 +31,7 @@
 		}
 
 		&-photo {
-			max-height: 80px;
+			max-height: fn.pxToRem(80);
 			border-radius: 100%;
 		}
 	}

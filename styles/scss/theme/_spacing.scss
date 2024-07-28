@@ -1,7 +1,9 @@
-$xxs: 8px;
-$xs: 12px;
-$sm: 16px;
-$md: 20px;
-$lg: 26px;
-$xl: 32px;
-// $xxl: 48px;
+@use "../util/functions" as fn;
+
+$xxs: fn.pxToRem(8);
+$xs: fn.pxToRem(12);
+$sm: fn.pxToRem(16);
+$md: fn.pxToRem(20);
+$lg: fn.pxToRem(26);
+$xl: fn.pxToRem(32);
+// $xxl: fn.pxToRem(48);

@@ -1,8 +1,10 @@
-$width-light: 2px;
-$width-medium: 4px;
-$width-bold: 6px;
-$width-heavy: 8px;
+@use "../util/functions" as fn;
 
-$radius-small: 4px;
-$radius-medium: 8px;
-$radius-large: 12px;
+$width-light: fn.pxToRem(2);
+$width-medium: fn.pxToRem(4);
+$width-bold: fn.pxToRem(6);
+$width-heavy: fn.pxToRem(8);
+
+$radius-small: fn.pxToRem(4);
+$radius-medium: fn.pxToRem(8);
+$radius-large: fn.pxToRem(12);
