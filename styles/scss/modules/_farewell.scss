@@ -1,0 +1,6 @@
+@use "../theme/spacing" as space;
+
+.farewell {
+	display: grid;
+	gap: space.$md;
+}

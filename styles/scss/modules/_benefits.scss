@@ -5,10 +5,6 @@
 @use "../util/mixins" as mixins;
 
 .benefits {
-	&__title {
-		margin-bottom: space.$md;
-	}
-
 	&__deck {
 		display: grid;
 		gap: space.$md;

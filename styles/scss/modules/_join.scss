@@ -5,5 +5,15 @@
 @use "../util/mixins" as mixins;
 
 .join {
-	@include mixins.section-wrapper(border.$radius-small);
+	&__form {
+		@include mixins.section-wrapper(border.$radius-small);
+		padding: space.$sm;
+
+		display: grid;
+		gap: space.$md;
+	}
+
+	&__btn {
+		margin-top: space.$sm;
+	}
 }

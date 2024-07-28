@@ -5,6 +5,11 @@
 @use "../util/mixins" as mixins;
 
 .hero {
+	&__title {
+		margin-bottom: 0;
+		color: inherit;
+	}
+
 	&__img {
 		border-radius: border.$radius-large;
 	}
@@ -21,7 +26,7 @@
 		color: color.$background-main;
 	}
 
-	&__title {
-		color: inherit;
+	&__btn {
+		margin-top: space.$md;
 	}
 }

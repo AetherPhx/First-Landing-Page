@@ -5,5 +5,25 @@
 @use "../util/mixins" as mixins;
 
 .network {
-	@include mixins.section-wrapper(border.$radius-small);
+	@include mixins.section-wrapper(border.$radius-large);
+	padding: space.$sm 0;
+
+	display: grid;
+	gap: space.$lg;
+
+	&__title {
+		margin-bottom: 0;
+		color: color.$background-main;
+	}
+
+	&__list {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+	}
+
+	&__icon {
+		color: color.$background-main;
+		font-size: 30px;
+	}
 }

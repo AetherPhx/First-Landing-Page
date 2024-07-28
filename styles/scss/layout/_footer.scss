@@ -2,11 +2,14 @@
 @use "../theme/colors" as color;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
+@use "../util/mixins" as mixins;
 
 .footer {
 	text-align: center;
 
 	&__text {
 		color: color.$main;
+		font-size: typo.$fs-smallest;
+		font-weight: typo.$fw-light;
 	}
 }

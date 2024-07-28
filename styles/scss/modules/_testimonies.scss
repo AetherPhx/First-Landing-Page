@@ -6,8 +6,7 @@
 
 .testimonies {
 	&__title {
-		margin-bottom: space.$md;
-		font-weight: typo.$fw-bold;
+		font-weight: typo.$fw-medium;
 	}
 
 	&__deck {
@@ -16,7 +15,7 @@
 	}
 
 	&__card {
-		@include mixins.section-wrapper(border.$radius-medium);
+		@include mixins.section-wrapper(border.$radius-large);
 		padding: space.$sm space.$xs;
 
 		&-header {

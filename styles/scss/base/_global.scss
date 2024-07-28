@@ -32,6 +32,7 @@ h1 {
 }
 h2 {
 	font-size: typo.$fs-bigger;
+	margin-bottom: space.$md;
 }
 h3 {
 	font-size: typo.$fs-big;
@@ -71,7 +72,6 @@ input,
 textarea {
 	@include mixins.element-wrapper;
 	padding: space.$xxs space.$xs;
-	margin: space.$xxs 0;
 	border-radius: border.$radius-medium;
 
 	color: color.$main;
