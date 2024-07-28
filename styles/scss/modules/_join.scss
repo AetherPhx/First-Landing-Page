@@ -5,10 +5,13 @@
 @use "../util/mixins" as mixins;
 
 .join {
-	&__form {
-		@include mixins.section-wrapper(border.$radius-small);
-		padding: space.$sm;
+	@include mixins.section-wrapper(border.$radius-small);
+	padding: space.$md;
 
+	&__title {
+		color: color.$background-main;
+	}
+	&__form {
 		display: grid;
 		gap: space.$md;
 	}

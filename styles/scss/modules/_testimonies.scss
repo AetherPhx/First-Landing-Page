@@ -1,5 +1,6 @@
 @use "../util/mixins" as mixins;
 @use "../util/functions" as fn;
+@use "../layout/breakpoints" as bp;
 @use "../theme/typography" as typo;
 @use "../theme/colors" as color;
 @use "../theme/spacing" as space;
@@ -33,6 +34,12 @@
 		&-photo {
 			max-height: fn.pxToRem(80);
 			border-radius: 100%;
+		}
+	}
+
+	@include bp.breakpoint("sm") {
+		&__deck {
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 }

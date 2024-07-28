@@ -1,5 +1,6 @@
 @use "../util/functions" as fn;
 @use "../util/mixins" as mixins;
+@use "../layout/breakpoints" as bp;
 @use "../theme/typography" as typo;
 @use "../theme/colors" as color;
 @use "../theme/spacing" as space;
@@ -7,13 +8,14 @@
 
 .network {
 	@include mixins.section-wrapper(border.$radius-large);
+	height: fit-content;
 	padding: space.$sm 0;
 
 	display: grid;
-	gap: space.$lg;
+	gap: space.$xs;
 
 	&__title {
-		margin-bottom: 0;
+		// margin-bottom: 0;
 		color: color.$background-main;
 	}
 
@@ -26,5 +28,17 @@
 	&__icon {
 		color: color.$background-main;
 		font-size: fn.pxToRem(30);
+	}
+
+	@include bp.breakpoint("sm") {
+		padding: space.$md;
+		gap: space.$xxl;
+
+		&__list {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: space.$xl;
+		}
 	}
 }

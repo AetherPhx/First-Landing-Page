@@ -1,17 +1,23 @@
+@use "../util/mixins" as mixins;
+@use "../util/functions" as fn;
+@use "../layout/breakpoints" as bp;
 @use "../theme/typography" as typo;
 @use "../theme/colors" as color;
 @use "../theme/spacing" as space;
 @use "../theme/borders" as border;
-@use "../util/mixins" as mixins;
 
 .hero {
+	display: grid;
+	gap: space.$md;
+
+	&__img {
+		// height: 100%;
+		border-radius: border.$radius-large;
+	}
+
 	&__title {
 		margin-bottom: 0;
 		color: inherit;
-	}
-
-	&__img {
-		border-radius: border.$radius-large;
 	}
 
 	&__info {
@@ -29,4 +35,12 @@
 	&__btn {
 		margin-top: space.$md;
 	}
+
+	@include bp.breakpoint("sm") {
+		grid-template-columns: 1fr 2fr;
+		align-items: center;
+	}
+
+	// @include bp.breakpoint("lg") {
+	// }
 }

@@ -1,6 +1,12 @@
+@use "../layout/breakpoints" as bp;
 @use "../theme/spacing" as space;
 
 .farewell {
 	display: grid;
+	align-items: center;
 	gap: space.$md;
+
+	@include bp.breakpoint("sm") {
+		grid-template-columns: 3fr 1fr;
+	}
 }

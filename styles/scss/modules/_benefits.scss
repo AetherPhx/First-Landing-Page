@@ -1,5 +1,6 @@
 @use "../util/functions" as fn;
 @use "../util/mixins" as mixins;
+@use "../layout/breakpoints" as bp;
 @use "../theme/typography" as typo;
 @use "../theme/colors" as color;
 @use "../theme/spacing" as space;
@@ -27,11 +28,18 @@
 
 		&-title {
 			font-weight: typo.$fw-bold;
+			text-align: center;
 		}
 
 		&-text {
 			margin: 0;
 			text-align: center;
+		}
+	}
+
+	@include bp.breakpoint("sm") {
+		&__deck {
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 }
